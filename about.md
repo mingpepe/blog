@@ -4,4 +4,4 @@ title: About~
 permalink: /about/
 theme: jekyll-theme-hacker
 ---
-Test about page
+Test about page~
