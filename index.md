@@ -1,3 +1,3 @@
-## [Test blog post](https://mingpepe.github.io/blog/post/testpost)
+## [Test blog post](https://mingpepe.github.io/blog/Post/TestPost)
 
-## [Test misc post](https://mingpepe.github.io/blog/misc/testmisc)
+## [Test misc post](https://mingpepe.github.io/blog/Misc/TestMisc)
