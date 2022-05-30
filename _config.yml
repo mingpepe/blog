@@ -1,4 +1,7 @@
 title: Test blog
 description: This is a description
-email: your-email@domain.com
 theme: jekyll-theme-hacker
+author:
+  name: "SomeHacker"
+  email: "someone@somewebsite.somedomain"
+  url: "https://ashishchaudhary.in/hacker-blog"
