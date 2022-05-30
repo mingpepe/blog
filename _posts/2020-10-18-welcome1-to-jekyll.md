@@ -3,6 +3,7 @@ layout: post
 title:  "Welcome2 to Jekyll!"
 date:   2021-10-18 12:58:29
 categories: jekyll update
+tags: tag1 tag2
 ---
 
 filename format example: 2020-10-18-welcome1-to-jekyll.md
