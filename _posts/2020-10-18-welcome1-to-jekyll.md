@@ -2,6 +2,7 @@
 layout: post
 title:  "Welcome2 to Jekyll!"
 date:   2021-10-18 12:58:29
+categorys: category1 category2
 tags: tag1 tag2
 ---
 
