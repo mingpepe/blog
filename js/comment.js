@@ -1,3 +1,6 @@
+function loadGithubComments(repo, issueid) {
+}
+
 document.addEventListener("DOMContentLoaded", function(event) {
   function loadComments(data) {
     for (var i=0; i<data.length; i++) {
