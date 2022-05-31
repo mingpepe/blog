@@ -17,6 +17,9 @@ layout: default
   <div id="githubissue_comments"></div>
 </section>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+.comments {
+  border-style: solid;
+}
 <script>
 document.addEventListener("DOMContentLoaded", function(event) {
   var reaction_fa = {
@@ -31,14 +34,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     for (var i=0; i<data.length; i++) {
       var name = data[i].user.login;
       var content = data[i].body;
-      $("#githubissue_comments").append("<div><p>name : " + name + "</p><p> content : " + content + "</p></div>");
+      $("#githubissue_comments").append("<div class=comments><p>name : " + name + "</p><p> content : " + content + "</p></div>");
     }
   }
   console.log(1);
-  console.log({{page.issueid}});
-  console.log(2);
   console.log({{GITHUB_REPO}});
-  $.ajax("https://api.github.com/repos/mingpepe/blog/issues/3/comments", {
+  console.log(2);
+  $.ajax("https://api.github.com/repos/mingpepe/blog/issues/{{page.issueid}}/comments", {
     headers: {Accept: "application/vnd.github.squirrel-girl-preview.full+json"},
     dataType: "json",
     success: function(msg){
