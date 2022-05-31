@@ -5,13 +5,13 @@ title: Tags
 ---
 <p>1</p>
 <p>{{ site.url}}</p>
-<p>{{ site.base_url}}</p>
+<p>{{ site.baseurl}}</p>
 <p>2</p>
 {% for tag in site.tags %}
   <h3>{{ tag[0] }}</h3>
   <ul>
     {% for post in tag[1] %}
-      <li><a href="{{ site.base_url | append: post.url}}">{{ post.title }}</a></li>
+      <li><a href="{{ site.baseurl | append: post.url}}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 {% endfor %}
