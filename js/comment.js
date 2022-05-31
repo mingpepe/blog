@@ -1,5 +1,6 @@
-var script = document.createElement('script');
-script.src = 'https://code.jquery.com/jquery-1.7.1.min.js';
+var jQuery = document.createElement('script');
+jQuery.src = 'https://code.jquery.com/jquery-1.7.1.min.js';
+document.head.appendChild(jQuery);
 document.addEventListener("DOMContentLoaded", function(event) {
   function loadComments(data) {
     for (var i=0; i<data.length; i++) {
