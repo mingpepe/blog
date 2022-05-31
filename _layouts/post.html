@@ -12,7 +12,8 @@ layout: default
 {% if page.tags %}
   <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
 {% endif %}
-<section class="comments" id="comments">
+{% if page and page.issueid %}
+<section>
   <div id="githubissue_comments"></div>
 </section>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
@@ -42,3 +43,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 });
 </script>
+{% endif %}
