@@ -20,4 +20,9 @@ layout: default
   <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/css/comment.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="{{site.url}}{{site.baseurl}}/js/comment.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      loadGithubComments({{site.GITHUB_REPO}}, {{page.issueid}}); 
+    });  
+  </script>
 {% endif %}
