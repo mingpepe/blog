@@ -5,10 +5,10 @@ function loadGithubComments(repo, issueid) {
       var content = data[i].body;
       $("#githubissue_comments").append("<div class=comments><p>name : " + name + "</p><p> content : " + content + "</p></div>");
     }
-    $("#githubissue_comments").append("<a href='https://github.com/${repo}/blog/issues/${issueid}#new_comment_field}' class='button'>Leave comments</button>");
+    $("#githubissue_comments").append(`<a href='https://github.com/${repo}/blog/issues/${issueid}#new_comment_field}` class='button'>Leave comments</button>");
   }
-  console.log('Send get request to get comments according to issue id')
-  $.ajax("https://api.github.com/repos/${repo}/blog/issues/${issueid}/comments", {
+  console.log(`Send get request to get comments according to issue id, repo = ${repo}, issueid = ${issueid}`)
+  $.ajax(`https://api.github.com/repos/${repo}/blog/issues/${issueid}/comments`, {
     headers: {Accept: "application/vnd.github.squirrel-girl-preview.full+json"},
     dataType: "json",
     success: function(msg){
