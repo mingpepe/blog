@@ -7,7 +7,7 @@ title: Misc
   <h1 class="page-heading">Misc</h1>
   <ul class="post-list">
     {% for post in site.posts %}
-      {% if page.misc and page.misc == true %}
+      {% if post.misc %}
         <li>
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
