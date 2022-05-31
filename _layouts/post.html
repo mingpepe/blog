@@ -18,6 +18,7 @@ layout: default
 </section>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script>
+document.addEventListener("DOMContentLoaded", function(event) {
   var reaction_fa = {
     "+1": "thumbs-o-up",
     "-1": "thumbs-o-down",
@@ -56,4 +57,5 @@ layout: default
       loadComments(msg);
     }
   });
+});
 </script>
