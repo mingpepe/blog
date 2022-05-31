@@ -7,7 +7,7 @@ function loadGithubComments(repo, issueid) {
     }
     url = `https://github.com/${repo}/blog/issues/${issueid}#new_comment_field}`
     console.log("Leave comments at " + url)
-    $("#githubissue_comments").append(`<a href='${url}'` class='button'>Leave comments</button>");
+    $("#githubissue_comments").append(`<a href='${url}' class='button'>Leave comments</button>`);
   }
   console.log(`Send get request to get comments according to issue id, repo = ${repo}, issueid = ${issueid}`)
   $.ajax(`https://api.github.com/repos/${repo}/blog/issues/${issueid}/comments`, {
