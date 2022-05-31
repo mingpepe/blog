@@ -17,10 +17,12 @@ layout: default
   <div id="githubissue_comments"></div>
 </section>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
-<script>
+<style>
 .comments {
   border-style: solid;
 }
+</style>
+<script>
 document.addEventListener("DOMContentLoaded", function(event) {
   function loadComments(data) {
     for (var i=0; i<data.length; i++) {
