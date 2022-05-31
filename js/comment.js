@@ -1,3 +1,4 @@
+var script = document.createElement('script');
 script.src = 'https://code.jquery.com/jquery-1.7.1.min.js';
 document.addEventListener("DOMContentLoaded", function(event) {
   function loadComments(data) {
@@ -8,10 +9,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
     $("#githubissue_comments").append("<a href='https://github.com/{{site.GITHUB_REPO}}/blog/issues/{{page.issueid}}#new_comment_field}' class='button'>Leave comments</button>");
   }
+  console.log('Send get request to get comments according to issue id')
   $.ajax("https://api.github.com/repos/{{site.GITHUB_REPO}}/blog/issues/{{page.issueid}}/comments", {
     headers: {Accept: "application/vnd.github.squirrel-girl-preview.full+json"},
     dataType: "json",
     success: function(msg){
+      console.log(msg);
       loadComments(msg);
     }
   });
