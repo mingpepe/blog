@@ -22,7 +22,7 @@ layout: default
   <script src="{{site.url}}{{site.baseurl}}/js/comment.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function(event) {
-      loadGithubComments({{site.GITHUB_REPO}}, {{page.issueid}}); 
+      loadGithubComments("{{site.GITHUB_REPO}}", "{{page.issueid}}"); 
     });  
   </script>
 {% endif %}
